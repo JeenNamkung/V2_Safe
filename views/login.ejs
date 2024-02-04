@@ -1,0 +1,9 @@
+<%- include("templates/header") %> 
+    log in
+    <form action='/submitLogin' method='post'>
+        <input name='username' type='text' placeholder='username'>
+        <input name='password' type='password' placeholder='password'>
+        <button>Submit</button>
+    </form>
+    <p><%= error %></p>
+<%- include("templates/footer") %> 
