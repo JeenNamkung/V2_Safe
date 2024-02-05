@@ -68,7 +68,7 @@ app.get('/', (req, res) => {
     if (!req.session.authenticated) {
         res.render("index");
     } else {
-        res.render("loggedinIndex");
+        res.render("loggedinIndex", { username: req.session.username });
     }
 });
 
